@@ -97,5 +97,16 @@ function compare(event) {
             createDiv.textContent = "Incorrect"
         }
     }
+    //number the user is on
+    questionIndex++;
+    
+    if (questionIndex >= questions.length) {
+        allDone(); //this will append the last page with the results
+        createDiv.textContent = "Quiz is over" + " " + "You got  " + score + "/" + questions.length + "Correct!";
+    } else {
+        render(questionIndex);
+    }
+    questionsDiv.appendChild(createDiv);
+    
 
 }
