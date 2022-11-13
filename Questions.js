@@ -126,6 +126,17 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
 
+    //time remaining calc
+    if (secondsLeft >= 0) {
+        var timeRemaining = secondsLeft;
+        var createP2 = document.createElement("p");
+        clearInterval(holdInterval);
+        createP.textContent = "Your score is-" + timeRemaining;
+
+        questionsDiv.appendChild(createP2);
+
+    }
+
     
 
 }
