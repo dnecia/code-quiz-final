@@ -39,4 +39,23 @@ var wrapper = document.querySelector("wrapper");
 
 //variables for the time left, interval & penalty time and new element
 var secondsLeft = 76;
-var holdInterval
+var holdInterval = 0;
+var penalty = 10;
+var ulCreate = document.createElement("ul");
+
+//listen for click on button
+timer.addEventListener("click", function () {
+    if (holdInterval === 0) {
+        holdInterval = setInterval(function () {
+            secondsLeft--;
+            currentTime.textContent = "Time: " + secondsLeft;
+
+            if (secondsLeft <= 0) {
+                clearInterval(holdInterval);
+                allDone();
+                currentTime.textContent = "Time is up";
+            }
+        }, 1000);
+    }
+    render(questionIndex);
+});
