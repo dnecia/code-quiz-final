@@ -30,3 +30,13 @@ var questions = [
 //The decleared variables 
 var score = 0;
 var questionIndex = 0;
+
+//more variables
+var currentTime = document.querySelector("#currentTime");
+var timer = document.querySelector("#startTime");
+var questionsDiv = document.querySelector("#questionsDiv");
+var wrapper = document.querySelector("wrapper");
+
+//variables for the time left, interval & penalty time and new element
+var secondsLeft = 76;
+var holdInterval
