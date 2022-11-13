@@ -136,7 +136,25 @@ function allDone() {
         questionsDiv.appendChild(createP2);
 
     }
+    //label for where to put initals 
+    var createLabel = document.createElement("label");
+    createLabel.setAttribute("id", "createLabel");
+    createLabel.textContent = "Enter initials"; 
 
-    
+    questionsDiv.appendChild(createLabel);
+
+    //input 
+    var createInput = document.createElement("input");
+    createInput.setAttribute("type", "text");
+    createInput.setAttribute("id", "initials");
+    createInput.textContent = "";
+
+    questionsDiv.appendChild(createSubmit);
+
+    //submit
+
+
+
+
 
 }
