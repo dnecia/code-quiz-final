@@ -152,6 +152,15 @@ function allDone() {
     questionsDiv.appendChild(createSubmit);
 
     //submit
+    var createSubmit = document.createElement("button");
+    createSubmit.setAttribute("type", "submit");
+    createSubmit.setAttribute("id", "submit");
+    createSubmit.textContent = "Submit";
+
+    questionsDiv.appendChild(createSubmit);
+
+    
+
 
 
 
