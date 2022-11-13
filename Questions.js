@@ -79,3 +79,23 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     });
 }
+
+//to compare the answer to right answer choice (correct or incorrect)
+function compare(event) {
+    var element = event.target;
+
+    if (element.matches("li")) {
+        var createDiv = document.createElement("div");
+        createDiv.setAttribute("id", "createDiv");
+        //correct cond
+        if (element.textContent == questions[questionIndex].answer) {
+            score++;
+            createDiv.textContent = "Correct"
+        } else {
+            //deduct time for incorrect answer
+            secondsLeft = secondsLeft - penalty;
+            createDiv.textContent = "Incorrect"
+        }
+    }
+
+}
