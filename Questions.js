@@ -26,3 +26,7 @@ var questions = [
         answer: "console log"
     },
 ];
+
+//The decleared variables 
+var score = 0;
+var questionIndex = 0;
