@@ -72,6 +72,10 @@ function render(questionIndex) {
         questionsDiv.textContent = userQuestion;
     }
     userChoices.forEach(function (newItem) {
-        var listItem = document.cretaeElement 
-    })
+        var listItem = document.createElement("li");
+        listItem.textContent = newItem;
+        questionsDiv.appendChild(ulCreate);
+        ulCreate.appendChild(listItem);
+        listItem.addEventListener("click", (compare));
+    });
 }
