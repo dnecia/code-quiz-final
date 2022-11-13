@@ -59,3 +59,19 @@ timer.addEventListener("click", function () {
     }
     render(questionIndex);
 });
+
+//Rendering questions to the page
+function render(questionIndex) {
+    questionsDiv. innerHTML = "";
+    ulCreate.innerHTML = "";
+    // loop through infor in the array
+    for (var i = 0; i < questions.length; i++) {
+        //appending the title of the questions 
+        var userQuestion = questions[questionIndex].title;
+        var userQuestion = questions[questionIndex].choices;
+        questionsDiv.textContent = userQuestion;
+    }
+    userChoices.forEach(function (newItem) {
+        var listItem = document.cretaeElement 
+    })
+}
