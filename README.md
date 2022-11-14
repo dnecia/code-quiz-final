@@ -7,7 +7,7 @@ This Challenge is to build a timed coding quiz with multiple-choice questions. T
 
 ### Images of Quiz
 ![alt text](./assets/Screen%20Shot%202022-11-13%20at%2011.49.55%20PM.png)
-![alt text](./Screen%20Shot%202022-11-13%20at%2011.50.08%20PM.png)
+![alt text](./assets/Screen%20Shot%202022-11-13%20at%2011.50.08%20PM.png)
 ![alt text](./assets/Screen%20Shot%202022-11-13%20at%2011.50.48%20PM.png)
 
 ## About
