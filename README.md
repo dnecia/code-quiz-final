@@ -5,7 +5,7 @@
 This Challenge is to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
 
 ### Link to Deployed Site
-[This is the link to my Portfolio] (https://dnecia.github.io/code-quiz-final/)
+[This is the link to the Quiz] (https://dnecia.github.io/code-quiz-final/)
 ### Images of Quiz
 ![alt text](./assets/Screen%20Shot%202022-11-13%20at%2011.49.55%20PM.png)
 ![alt text](./assets/Screen%20Shot%202022-11-13%20at%2011.50.08%20PM.png)
