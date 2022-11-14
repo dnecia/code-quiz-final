@@ -68,7 +68,7 @@ function render(questionIndex) {
     for (var i = 0; i < questions.length; i++) {
         //appending the title of the questions 
         var userQuestion = questions[questionIndex].title;
-        var userQuestion = questions[questionIndex].choices;
+        var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
     userChoices.forEach(function (newItem) {
@@ -149,7 +149,7 @@ function allDone() {
     createInput.setAttribute("id", "initials");
     createInput.textContent = "";
 
-    questionsDiv.appendChild(createSubmit);
+    questionsDiv.appendChild(createInput);
 
     //submit
     var createSubmit = document.createElement("button");
@@ -174,15 +174,15 @@ function allDone() {
             console.log(finalScore)
             var allScores = localStorage.getItem("allScores");
             if (allScores === null ) {
-                allScores = JSON.parse(allScores);
+                allScores = [];
             } else {
-                allScores =JSON.parse(allScores);
+                allScores = JSON.parse(allScores);
             }
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             //go to final page
-            window.location.replace(".HighScores.html");
+            window.location.replace("./HighScores.html");
         }
            
 

@@ -77,41 +77,55 @@
             margin-top: 20px;
             border-top: 1px solid lightgray;
         }
-
-@media screen and (max-width: 700px){
-    body {
-        max-width: 700px;
-    }
+        @media screen and (max-width: 700px) {
+  
+            body {
+                max-width: 700px;
+            }
+       
+        #wrapper {
+            position: absolute;
+            left: 20%;
+        }
     
-    #wrapper {
-        position: absolute;
-        left: 20%;
-    }
-
-    a {
-        margin-left: 20%;
-    }
-        #goBack {
-            
-            position: relative;
-            left: 55%;
+        a {
+            margin-left: 20%;
         }
-
-        #clear {
-            
-            position: relative;
-            right: 5%;
-            
+            #goBack {
+                
+                position: relative;
+                left: 55%;
+            }
+    
+            #clear {
+                
+                position: relative;
+                right: 5%;
+                
+            }
         }
-
+            
+       
+        @media screen and (max-width: 640px) {
+    
+         body {
+                min-width: 640px;
+            }
+       
+        #wrapper {
+            position: absolute;
+            left: 10%;
+        }
+          a {
+              margin-left: 10%;
+          }
+    
+         
     }
 
 
 
 
 
-
-
-
-
+        
 
