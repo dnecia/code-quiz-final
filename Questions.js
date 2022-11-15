@@ -97,7 +97,7 @@ function compare(event) {
             createDiv.textContent = "Incorrect"
         }
     }
-    //number the user is on
+   
     questionIndex++;
     
     if (questionIndex >= questions.length) {
